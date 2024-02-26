@@ -5,20 +5,31 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Utility methods for loading employee data.
+ * 
+ */
 public class DataLoader {
 
 	public static final String FILE_PATH = "data/employee.csv";
 
+	/**
+	 * Loads employee data from a CSV file (specified by {{@link #FILE_PATH}) and
+	 * returns a list of employees.
+	 * 
+	 * @return
+	 */
 	public static List<Employee> loadEmployees() {
 
 		List<Employee> result = new ArrayList<Employee>();
-		
+
 		String line = null;
 
 		try (Scanner s = new Scanner(new File(FILE_PATH))) {
 
-			int numRecords = Integer.parseInt(s.nextLine());
-			for (int i = 0; i < numRecords; i++) {
+			//ignore the header
+			s.nextLine();
+			while (s.hasNextLine()) {
 
 				line = s.nextLine();
 				if (!line.trim().isEmpty()) {

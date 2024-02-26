@@ -37,10 +37,10 @@ public class PayrollTests {
 		assertEquals(3, HourlyEmployee.class.getDeclaredMethods().length, "Must declare methods as in the UML diagram: 3 declared/overridden method(s) are expected");
 		assertTrue(Employee.class.isAssignableFrom(HourlyEmployee.class), "Temporary must extend Hourly");
 
-		HourlyEmployee hourlyEmployee = new Temporary("B0CAF2", "Neil", "Hamburger", "Janitor", 10.2, 20);
+		HourlyEmployee hourlyEmployee = new Temporary("B0CAF2", "Neil", "Hamburger", "Janitor", 10.2, 20.0);
 		assertEquals(204, hourlyEmployee.getGrossPay(), "Check how your HourlyEmployee is calculating gross pay");
 		assertEquals(10.2, hourlyEmployee.getHourlyPayRate(), "Check how your HourlyEmployee is storing hourly pay");
-		assertEquals(20, hourlyEmployee.getHoursWorked(), "Check how your HourlyEmployee is storing hours worked");
+		assertEquals(20.0, hourlyEmployee.getHoursWorked(), "Check how your HourlyEmployee is storing hours worked");
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class PayrollTests {
 		assertEquals(1, Temporary.class.getDeclaredMethods().length, "Must declare methods as in the UML diagram: 1 declared/overridden method(s) are expected");
 		assertTrue(HourlyEmployee.class.isAssignableFrom(Temporary.class), "Temporary must extend Hourly");
 
-		Temporary temp = new Temporary("B0CAF2", "Neil", "Hamburger", "Janitor", 10.2, 20);
+		Temporary temp = new Temporary("B0CAF2", "Neil", "Hamburger", "Janitor", 10.2, 20.0);
 		assertEquals(0, temp.getTaxes(), "Temp employees don't pay taxes");
 		assertEquals(204, temp.getGrossPay(), "Check how your HourlyEmployee is calculating gross pay");
 		assertEquals(204, temp.getNetPay(), "Check how your Employee is calculating net pay");
@@ -69,7 +69,7 @@ public class PayrollTests {
 		assertEquals(1, Staff.class.getDeclaredMethods().length, "Must declare methods as in the UML diagram: 1 declared/overridden method(s) are expected");
 		assertTrue(HourlyEmployee.class.isAssignableFrom(Staff.class), "Staff must extend HourlyEmployee");
 
-		Staff staff = new Staff("FA0112", "Jan", "Skylar", "Professional Assistant", 8.45, 40);
+		Staff staff = new Staff("FA0112", "Jan", "Skylar", "Professional Assistant", 8.45, 40.0);
 		assertEquals(338, staff.getGrossPay(), 0.01, "Check how your HourlyEmployee is calculating net pay");
 		assertEquals(50.7, staff.getTaxes(), 0.01, "Check the staff taxes calculation");
 		assertEquals(287.3, staff.getNetPay(), 0.01, "Check how your Employee is calculating net pay");
@@ -86,7 +86,7 @@ public class PayrollTests {
 		
 		assertEquals(3, SalaryEmployee.class.getDeclaredMethods().length, "Must declare methods as in the UML diagram: 3 declared/overridden methods are expected");
 
-		SalaryEmployee salary = new SalaryEmployee("011F42", "Tim", "Heidecker", "President", 120000);
+		SalaryEmployee salary = new SalaryEmployee("011F42", "Tim", "Heidecker", "President", 120000.0);
 		assertEquals(2307.69, salary.getGrossPay(), 0.01, "Check how your SalaryEmployee is calculating net pay");
 		assertEquals(461.54, salary.getTaxes(), 0.01, "Check the salary tax calculation ");
 		assertEquals(1946.15, salary.getNetPay(), 0.01, "Check how your Employee is calculating net pay");

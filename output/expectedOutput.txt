@@ -1,10 +1,10 @@
-ID       Name                 Type       Title                              Gross     Taxes       Net
-011F42   Heidecker,  Tim      Salary     President                      $ 2307.69 $  461.54 $ 1946.15
-321FF0   Wareheim,  Eric      Salary     CEO                            $ 2153.85 $  430.77 $ 1823.08
-432890   Hart,  David         Salary     Accountant                     $ 1250.00 $  250.00 $ 1100.00
-F91AC1   Brule,  Steve        Salary     Quality Control Specialist     $  653.85 $  130.77 $  623.08
-89FFAC   Quall,  James        Salary     Programmer I                   $  865.38 $  173.08 $  792.31
-5729FF   Dunn,  Richard       Temporary  Receptionist                   $  428.13 $    0.00 $  428.13
-B0CAF2   Hamburger,  Neil     Temporary  Janitor                        $  285.60 $    0.00 $  285.60
-FA0112   Skylar,  Jan         Staff      Professional Assistant         $  338.00 $   50.70 $  287.30
-F3CB01   Skylar,  Wayne       Staff      Technical Writer               $  583.68 $   87.55 $  496.13
+ID       Name                 Title                              Gross     Taxes       Net
+011F42   Heidecker,  Tim      President                      $ 2307.69 $  461.54 $ 1946.15
+321FF0   Wareheim,  Eric      CEO                            $ 2153.85 $  430.77 $ 1823.08
+432890   Hart,  David         Accountant                     $ 1250.00 $  250.00 $ 1100.00
+F91AC1   Brule,  Steve        Quality Control Specialist     $  653.85 $  130.77 $  623.08
+89FFAC   Quall,  James        Programmer I                   $  865.38 $  173.08 $  792.31
+5729FF   Dunn,  Richard       Receptionist                   $  428.13 $    0.00 $  428.13
+B0CAF2   Hamburger,  Neil     Janitor                        $  285.60 $    0.00 $  285.60
+FA0112   Skylar,  Jan         Professional Assistant         $  338.00 $   50.70 $  287.30
+F3CB01   Skylar,  Wayne       Technical Writer               $  583.68 $   87.55 $  496.13
